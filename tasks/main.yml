@@ -12,11 +12,11 @@
     mode: '0644'
   loop:
     - src: 'apt-periodic.j2'
-      dest: '/etc/apt/apt.conf.d/10periodic'
+      dest: '/etc/apt/apt.conf.d/11periodic'
     - src: 'apt-unattended.j2'
-      dest: '/etc/apt/apt.conf.d/50unattended-upgrades'
+      dest: '/etc/apt/apt.conf.d/51unattended-upgrades'
     - src: 'apt-proxy.j2'
-      dest: '/etc/apt/apt.conf.d/01proxy'
+      dest: '/etc/apt/apt.conf.d/02proxy'
   loop_control:
     loop_var: 'file'
 
